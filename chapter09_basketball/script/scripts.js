@@ -106,4 +106,26 @@ function onUserShoot(shootType) {
 
   let shootLeftElement = document.getElementById('shots-left')
   shootLeftElement.innerHTML = shootLeft;
+
+  //조건문을 적용 -> shootLeft === 0 일 때 게임 종료
+  if(shootLeft === 0){
+    //사용자가 이겼을 때 - 졌을 때 - 비겼을 때의 세가지 경우로 나눔
+    //이겼습니다// 졌습니다 // 비겼습니다. 
+    if(userScore > comScore)
+    {
+      alert("이겼습니다!");
+      textElement.innerHTML = "이겼습니다!";
+    }
+    else if(comScore > userScore)
+    {
+      alert("졌습니다 ㅡㅜ");
+      textElement.innerHTML = "졌습니다 ㅡㅜ";
+    }
+    else{
+      alert("비겼습니다.");
+      textElement.innerHTML = "비겼습니다."
+    }
+    
+
+  }
 }
