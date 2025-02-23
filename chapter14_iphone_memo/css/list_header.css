@@ -1,4 +1,4 @@
-.main-header{
+.main-header {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -7,14 +7,14 @@
   width: 100%;
 }
 
-.main-logo{
+.main-logo {
   display: flex;
   align-items: center;
   margin: 0;
   font-size: 24px;
   font-weight: 800;
   color: #eeeeee;
-  & > svg{
+  & > svg {
     margin-right: 10px;
     width: 40px;
     height: 40px;
@@ -22,11 +22,11 @@
   }
 }
 
-.write-link{
+.write-link {
   padding: 0 5px;
-  & > svg{
+  & > svg {
     width: 30px;
-    height: 40px;
+    height: 30px;
     stroke: #eeeeee;
   }
 }
